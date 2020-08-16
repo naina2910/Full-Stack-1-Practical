@@ -27,7 +27,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     position: fixed;
     top: 0px;
     z-index: 10;
@@ -93,7 +92,7 @@ html {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin: 0px 20px;
+    margin: 15px 20px;
 }
 
 #section2 {
@@ -113,6 +112,7 @@ html {
     height: 380px;
     color: white;
     margin-top: 20px;
+    padding: 0px 10px;
 }
 
 #left h3 {
@@ -121,7 +121,7 @@ html {
 
 #left p {
     font-size: large;
-    margin: 20px 15px;
+    margin: 20px 0px;
     text-align: justify;
 }
 
@@ -173,10 +173,11 @@ html {
 .card {
     background-color: lightgrey;
     width: 260px;
-    height: 450px;
+    height: 460px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
+    margin: 10px 0px;
 }
 
 .card img {
@@ -229,4 +230,8 @@ html {
 
 #footer a {
     color: orange;
+}
+
+#footer a:hover {
+    color: dodgerblue;
 }

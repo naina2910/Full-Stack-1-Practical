@@ -343,3 +343,21 @@ html {
         margin-bottom: 160px;
     }
 }
+
+@media(max-width:450px) {
+    #content,
+    #section4 {
+        min-width: 400px;
+    }
+    #banner h1 {
+        font-size: 30px;
+    }
+    .circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .card {
+        width: 100%;
+    }
+}

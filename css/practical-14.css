@@ -115,7 +115,7 @@ button {
     border-radius: 20px;
     outline: none;
     border: none;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px 5px gray;
     color: white;
     font-weight: bold;
     font-size: medium;

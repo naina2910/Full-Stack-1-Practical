@@ -111,7 +111,6 @@ button {
     display: block;
     width: 100px;
     height: 40px;
-    background: #87556f;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -119,6 +118,14 @@ button {
     color: white;
     font-weight: bold;
     font-size: medium;
+}
+
+.login1 button {
+    background-color: #87556f;
+}
+
+.login1 button:hover {
+    background-color: purple;
 }
 
 .loginbutton p {
@@ -144,6 +151,10 @@ input[type="checkbox"] {
     background-color: #f40552;
 }
 
+.login2 button:hover {
+    background-color: #8ec6c5;
+}
+
 .login2 .icons {
     margin-top: 30px;
     background-color: #8ec6c5;
@@ -162,6 +173,10 @@ input[type="checkbox"] {
     margin-top: 20px;
     width: 100%;
     background-color: #cf7500;
+}
+
+.login3 button:hover {
+    background-color: brown;
 }
 
 .login3 .loginbutton p {
@@ -192,6 +207,12 @@ input[type="checkbox"] {
 .login3 input[type="email"]:focus,
 .login3 input[type="password"]:focus {
     border-color: #cf7500;
+}
+
+@media(max-width:760px) {
+    section {
+        width: 70%;
+    }
 }
 
 @media(max-width:480px) {

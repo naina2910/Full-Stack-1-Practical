@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffeadb;
+    background-color: #a4b494;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -33,7 +33,7 @@ section {
 }
 
 .header {
-    background-color: #87556f;
+    background-image: linear-gradient(to right, #7d0633, #056674);
     height: 130px;
     display: flex;
     align-content: center;
@@ -47,6 +47,10 @@ h3 {
     text-align: center;
     padding: 15px;
     font-size: 22px;
+}
+
+span:hover {
+    cursor: pointer;
 }
 
 .icons {
@@ -121,11 +125,11 @@ button {
 }
 
 .login1 button {
-    background-color: #87556f;
+    background-color: #7d0633;
 }
 
 .login1 button:hover {
-    background-color: purple;
+    background-color: #056674;
 }
 
 .loginbutton p {
@@ -161,6 +165,10 @@ input[type="checkbox"] {
     height: 81px;
 }
 
+.login3 h3 {
+    color: #e79c2a;
+}
+
 .login3 .userinputs {
     margin-top: 0px;
 }
@@ -169,14 +177,14 @@ input[type="checkbox"] {
     margin-bottom: 0px;
 }
 
-.login3 .loginbutton button {
+.login3 button {
     margin-top: 20px;
     width: 100%;
-    background-color: #cf7500;
+    background-image: linear-gradient(to right, #cf7500, #fbfd8a);
 }
 
 .login3 button:hover {
-    background-color: brown;
+    color: black;
 }
 
 .login3 .loginbutton p {
@@ -194,14 +202,6 @@ input[type="checkbox"] {
     line-height: 30px;
     text-align: center;
     padding: 0px;
-}
-
-.login3 .userinputs label {
-    display: none;
-}
-
-.login3 input[type="email"]:focus~label {
-    display: block;
 }
 
 .login3 input[type="email"]:focus,

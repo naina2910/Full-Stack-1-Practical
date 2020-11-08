@@ -20,7 +20,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 30px 10px;
 }
 
 input {
@@ -62,13 +62,13 @@ input {
     justify-content: center;
     flex-direction: column;
     list-style: none;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .todo-list-item {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 10px 15px;
     background-color: white;
     border-radius: 7px;
 }

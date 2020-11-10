@@ -17,7 +17,7 @@ function showTime() {
 
     const ampm = (h >= 12) ? "PM" : "AM";
 
-    h = h % 12 || h;
+    h = h % 12 || 12;
 
     time.innerHTML = `${addZero(h)}:${addZero(m)}:${addZero(s)} ${ampm}`;
 

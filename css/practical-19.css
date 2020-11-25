@@ -18,8 +18,8 @@ body {
     width: 360px;
     height: 440px;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .container form {

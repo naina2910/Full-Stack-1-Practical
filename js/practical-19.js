@@ -23,13 +23,53 @@ const mobile = document.getElementById("mobile")
 const progress = document.getElementById("progress")
 
 next1.onclick = function() {
-    if (isDataValidate(email, password1, password2)) {
+    if (isAccountValidate(email, password1, password2)) {
         form1.style.left = "-400px"
         form2.style.left = "0px"
         progress.style.width = "240px"
     }
 
 };
+
+function isAccountValidate(email, password1, password2) {
+    var emailvalue = email.value.trim();
+    var password1value = password1.value.trim();
+    var password2value = password2.value.trim();
+
+    var bool = true;
+
+    if (emailvalue === "") {
+        showError(email, "Field can not be Blank");
+        bool = false;
+    } else if (!isEmailValid(emailvalue)) {
+        showError(email, "Email id is not valid");
+        bool = false;
+    } else {
+        showSuccess(email);
+    }
+
+    if (password1value === "") {
+        showError(password1, "Field can not be Blank");
+        bool = false;
+    } else {
+        showSuccess(password1);
+    }
+
+    if (password2value === "") {
+        showError(password2, "Field can not be Blank");
+        bool = false;
+    } else if (password1value != password2value) {
+        showError(password2, "Passwords does not match");
+    } else {
+        showSuccess(password2);
+    }
+
+    return bool;
+}
+
+function isEmailValid(email) {
+    return /^([a-zA-Z0-9\.\-]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(email);
+}
 
 back1.onclick = function() {
     form2.style.left = "400px"
